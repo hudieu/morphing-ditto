@@ -7,7 +7,7 @@ Once all my elements are ready, I set up my html document with a svg element con
 and set the first shape as a visible path in my svg. To insert the picture of my choice within the svg, I simply reference the picture as an img tag within a pattern tag 
 in my svg defs.
 
-The animation uses the core gsap library as well as an extra plugin, namely MorphSVGPlugin, which is free to use on the codepen website.
+The animation uses the core gsap library as well as an extra plugin, namely MorphSVGPlugin, which is free to use on the codepen website, but only available for the purpose of sharing this repo because I have purchased a paid plan to have access to this plugin in all environments.
 
 The steps for the animation come in this order:
 

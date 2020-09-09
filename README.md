@@ -13,7 +13,7 @@ The steps for the animation come in this order:
 
 1 - Create the timeline with repeat:-1 for it to repeat indefinitely;
 
-2 - Fill the first shape with its corresponding dominant color to make the details disappear.
+2 - Fill the first shape and picture with its corresponding dominant color to make the details disappear.
 
 3 - Morph the svg path to the next shape and transition the color to the next dominant color for the next picture inside the shape.
 

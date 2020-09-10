@@ -3,15 +3,23 @@
 Basic css styling to ensure responsiveness. It's not recommended to set height:100vh on body as I recall, but this is a stand-alone svg animation
 with no purpose of being a functional website, and so I didn't need an extra element!
 */
+
+*{
+  margin:0;
+  padding:0;
+  
+}
 body {
   height: 100vh;
   display: flex;
   background: lavender;
+  overflow:hidden;
 }
 article {
   width: 60vw;
   height: 60vw;
   margin: auto;
+  transform:translateY(-5%);
 }
 
 svg {

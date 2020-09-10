@@ -7,7 +7,7 @@ Once all my elements are ready, I set up my html document with a svg element con
 and set the first shape as a visible path in my svg. To insert the picture of my choice within the svg, I simply reference the picture as an img tag within a pattern tag 
 in my svg defs.
 
-The animation uses the core gsap library as well as an extra plugin, namely MorphSVGPlugin, which is free to use on the codepen website, but only available for the purpose of sharing this repo because I have purchased a paid plan to have access to this plugin in all environments.
+The animation uses the core gsap library as well as an extra paid plugin, namely MorphSVGPlugin, which is free to use on the codepen website, but I have to omit the script for the plugin in the index.js since all greensock files are subject to their own license. I purchased a paid plan, so the live demo is in agreement with the license terms.
 
 The steps for the animation come in this order:
 
@@ -31,6 +31,7 @@ With gsap, you can add different animations to a main timeline, defining them as
 the built-in .add method into your main timeline. Thus, if I wanted to add more pokemons to the animation and / or some controls to choose which pokemon
 to morph from / to, I would need to isolate steps 2, 3 and 4 in a function and call it when needed with relevant parameters.
 
-If anyone is interested in doing something along those lines, feel free to jump in!
+If anyone is interested in doing something along those lines (provided they respect greensock licensing terms for the MorphSVGPlugin), feel free to jump in!
+
 
 

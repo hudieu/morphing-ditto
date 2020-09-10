@@ -17,7 +17,7 @@ Once all my elements are ready, I set up my html document with a svg element con
 and set the first shape as a visible path in my svg. To insert the picture of my choice within the svg, I simply reference the picture as an img tag within a pattern tag 
 in my svg defs.
 
-The animation uses the core gsap library as well as an extra paid plugin, namely MorphSVGPlugin, which is free to use on the codepen website, but I have to omit the script for the plugin in the index.js since all greensock files are subject to their own license. I purchased a paid plan, so the live demo is in agreement with the license terms.
+The animation uses the core gsap library as well as an extra paid plugin, namely MorphSVGPlugin, which is free to use on the codepen website, but I can't include the plugin in the js folder here since all greensock files are subject to their own license. I purchased a paid plan, so the live demo is in agreement with the license terms.
 
 The steps for the animation come in this order:
 

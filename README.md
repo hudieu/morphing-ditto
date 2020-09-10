@@ -1,3 +1,12 @@
+
+LIVE DEMOS:
+
+- Standalone: https://morphing-ditto.netlify.app/
+
+- Codepen: https://codepen.io/smoothdev35/pen/ExjzvGa 
+
+
+
 This is a simple animation based on svg manipulation with the gsap (greensock animation platform) library. 
 
 I used downloaded pokemon images from google, gathered the 'empty' shapes for each one as an svg path using GIMP (free alternative for photo editing on mac).

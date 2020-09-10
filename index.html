@@ -1,22 +1,31 @@
-   <!DOCTYPE html>
-   <html>
-   <head>
-     <meta name="author" content="Hugo Priet">
-     <meta name="description" content="svg animation of a morphing pokemon using the gsap library">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="css/main.css"/>
-     <!-- For performance purposes I link the core gsap library from the cdn and defer all my scripts.-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-     <script src="js/index.js" defer></script>
-   <title>
-     Morphing Ditto
-   </title>
-   </head>
-   
-   <article class="pokemon">
-     <svg id="test" viewbox="0 0 475 475">
-       <defs>
-         <path id="ditto" d="M 214.00,55.75
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="Hugo Priet" />
+    <meta
+      name="description"
+      content="svg animation of a morphing pokemon using the gsap library"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- For performance purposes I link the core gsap library from the cdn and defer all my scripts.-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/gsap-shockingly-green/MorphSVGPlugin.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <title>Morphing Ditto</title>
+  </head>
+  <body>
+    <article class="pokemon">
+      <svg id="test" viewbox="0 0 475 475">
+        <defs>
+          <path
+            id="ditto"
+            d="M 214.00,55.75
                 C 196.90,62.29 192.67,70.75 185.00,76.39
                   181.63,78.86 168.97,85.19 165.00,85.89
                   165.00,85.89 154.00,85.89 154.00,85.89
@@ -62,9 +71,12 @@
                   324.21,71.83 313.34,66.31 302.00,65.75
                   294.66,65.39 292.54,67.15 287.00,67.58
                   277.26,69.00 267.63,69.62 258.00,67.58
-                  240.72,63.26 234.04,51.09 214.00,55.75 Z" />
+                  240.72,63.26 234.04,51.09 214.00,55.75 Z"
+          />
 
-         <path id="bulbasaur" d="M 360.00,36.00
+          <path
+            id="bulbasaur"
+            d="M 360.00,36.00
                   C 355.53,57.81 335.17,64.22 315.83,66.53
                   305.10,67.81 306.44,68.13 295.00,68.00
                   295.00,68.00 280.00,67.00 280.00,67.00
@@ -144,9 +156,12 @@
                   M 100.00,418.00
                   C 100.00,418.00 100.00,419.00 100.00,419.00
                   100.00,419.00 99.00,418.00 99.00,418.00
-                  99.00,418.00 100.00,418.00 100.00,418.00 Z" />
+                  99.00,418.00 100.00,418.00 100.00,418.00 Z"
+          />
 
-         <path id="charmander" d="M 136.00,205.00
+          <path
+            id="charmander"
+            d="M 136.00,205.00
                   C 136.00,205.00 136.00,207.00 136.00,207.00
                     136.00,207.00 125.00,212.14 125.00,212.14
                     125.00,212.14 109.00,218.52 109.00,218.52
@@ -249,8 +264,11 @@
                     84.38,92.64 82.94,94.63 82.13,100.00
                     80.69,109.56 80.91,111.56 81.26,121.00
                     81.78,135.29 71.11,152.34 76.17,164.00
-                    84.59,183.38 115.93,200.42 136.00,205.00 Z" />
-         <path id="squirtle" d="M 136.00,180.00
+                    84.59,183.38 115.93,200.42 136.00,205.00 Z"
+          />
+          <path
+            id="squirtle"
+            d="M 136.00,180.00
                   C 126.75,185.71 112.01,188.45 102.00,192.86
                     93.37,196.66 84.10,200.28 76.00,205.09
                     76.00,205.09 57.00,218.17 57.00,218.17
@@ -321,8 +339,11 @@
                     107.34,98.53 108.56,100.07 107.86,105.00
                     106.82,112.36 97.37,118.83 98.33,130.00
                     99.57,144.58 111.15,158.03 121.00,168.00
-                    126.33,173.38 129.09,176.61 136.00,180.00 Z" />
-         <path id="pikachu" d="M 85.00,256.00
+                    126.33,173.38 129.09,176.61 136.00,180.00 Z"
+          />
+          <path
+            id="pikachu"
+            d="M 85.00,256.00
                   C 85.00,256.00 64.00,262.34 64.00,262.34
                     64.00,262.34 48.00,267.86 48.00,267.86
                     48.00,267.86 38.42,271.83 38.42,271.83
@@ -408,25 +429,83 @@
                     66.70,167.25 63.97,171.57 60.44,178.00
                     57.07,184.12 52.04,196.08 51.61,203.00
                     50.43,221.85 61.25,239.78 76.00,250.73
-                    79.48,253.31 80.81,254.58 85.00,256.00 Z" />
+                    79.48,253.31 80.81,254.58 85.00,256.00 Z"
+          />
 
-         <pattern id="img1" patternUnits="userSpaceOnUse" width="475" height="475">
-           <image href="https://ik.imagekit.io/g0osqsaljoz/pokemon/ditto_fkdeLo_J_.png" x="0" y="0" width="475" height="475" />
-         </pattern>
-         <pattern id="img2" patternUnits="userSpaceOnUse" width="475" height="475">
-           <image href="https://ik.imagekit.io/g0osqsaljoz/pokemon/bulbasaur_vVgwnmFVV.png" x="0" y="0" width="475" height="475" />
-         </pattern>
-         <pattern id="img3" patternUnits="userSpaceOnUse" width="475" height="475">
-           <image href="https://ik.imagekit.io/g0osqsaljoz/pokemon/charmander_gQ2OTLsZp.png" x="0" y="0" width="475" height="475" />
-         </pattern>
-         <pattern id="img4" patternUnits="userSpaceOnUse" width="475" height="475">
-           <image href="https://ik.imagekit.io/g0osqsaljoz/pokemon/squirtle_39hrttm1U.png" x="0" y="0" width="475" height="475" />
-         </pattern>
-         <pattern id="img5" patternUnits="userSpaceOnUse" width="475" height="475">
-           <image href="https://ik.imagekit.io/g0osqsaljoz/pokemon/pikachu_0A00GlpT0i.png" x="0" y="0" width="475" height="475" />
-         </pattern>
-       </defs>
-       <path id="dittoOne" d="M 214.00,55.75
+          <pattern
+            id="img1"
+            patternUnits="userSpaceOnUse"
+            width="475"
+            height="475"
+          >
+            <image
+              href="https://ik.imagekit.io/g0osqsaljoz/pokemon/ditto_fkdeLo_J_.png"
+              x="0"
+              y="0"
+              width="475"
+              height="475"
+            />
+          </pattern>
+          <pattern
+            id="img2"
+            patternUnits="userSpaceOnUse"
+            width="475"
+            height="475"
+          >
+            <image
+              href="https://ik.imagekit.io/g0osqsaljoz/pokemon/bulbasaur_vVgwnmFVV.png"
+              x="0"
+              y="0"
+              width="475"
+              height="475"
+            />
+          </pattern>
+          <pattern
+            id="img3"
+            patternUnits="userSpaceOnUse"
+            width="475"
+            height="475"
+          >
+            <image
+              href="https://ik.imagekit.io/g0osqsaljoz/pokemon/charmander_gQ2OTLsZp.png"
+              x="0"
+              y="0"
+              width="475"
+              height="475"
+            />
+          </pattern>
+          <pattern
+            id="img4"
+            patternUnits="userSpaceOnUse"
+            width="475"
+            height="475"
+          >
+            <image
+              href="https://ik.imagekit.io/g0osqsaljoz/pokemon/squirtle_39hrttm1U.png"
+              x="0"
+              y="0"
+              width="475"
+              height="475"
+            />
+          </pattern>
+          <pattern
+            id="img5"
+            patternUnits="userSpaceOnUse"
+            width="475"
+            height="475"
+          >
+            <image
+              href="https://ik.imagekit.io/g0osqsaljoz/pokemon/pikachu_0A00GlpT0i.png"
+              x="0"
+              y="0"
+              width="475"
+              height="475"
+            />
+          </pattern>
+        </defs>
+        <path
+          id="dittoOne"
+          d="M 214.00,55.75
         C 196.90,62.29 192.67,70.75 185.00,76.39
           181.63,78.86 168.97,85.19 165.00,85.89
           165.00,85.89 154.00,85.89 154.00,85.89
@@ -472,8 +551,12 @@
           324.21,71.83 313.34,66.31 302.00,65.75
           294.66,65.39 292.54,67.15 287.00,67.58
           277.26,69.00 267.63,69.62 258.00,67.58
-          240.72,63.26 234.04,51.09 214.00,55.75 Z" fill="url(#img1)" />
-       <path id="dittoMask" d="M 214.00,55.75
+          240.72,63.26 234.04,51.09 214.00,55.75 Z"
+          fill="url(#img1)"
+        />
+        <path
+          id="dittoMask"
+          d="M 214.00,55.75
         C 196.90,62.29 192.67,70.75 185.00,76.39
           181.63,78.86 168.97,85.19 165.00,85.89
           165.00,85.89 154.00,85.89 154.00,85.89
@@ -519,9 +602,10 @@
           324.21,71.83 313.34,66.31 302.00,65.75
           294.66,65.39 292.54,67.15 287.00,67.58
           277.26,69.00 267.63,69.62 258.00,67.58
-          240.72,63.26 234.04,51.09 214.00,55.75 Z" fill="transparent" />
-     </svg>
-   </article>
-
-   </body>
-   </html>
+          240.72,63.26 234.04,51.09 214.00,55.75 Z"
+          fill="transparent"
+        />
+      </svg>
+    </article>
+  </body>
+</html>

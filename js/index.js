@@ -1,3 +1,5 @@
+gsap.registerPlugin(MorphSVGPlugin);
+
 let generalMorph = gsap.timeline({ repeat: -1 });
 
 generalMorph

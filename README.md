@@ -3,7 +3,7 @@ This is a simple animation based on svg manipulation with the gsap (greensock an
 I used downloaded pokemon images from google, gathered the 'empty' shapes for each one as an svg path using GIMP (free alternative for photo editing on mac).
 Then, I picked the dominant color for each picture with an online tool (https://www.imagecolorpicker.com).
 
-Once all my elements are ready, I set up my html document with a svg element containing all (hidden in <defs>) references to the shapes, 
+Once all my elements are ready, I set up my html document with a svg element containing all (hidden in defs tag) references to the shapes, 
 and set the first shape as a visible path in my svg. To insert the picture of my choice within the svg, I simply reference the picture as an img tag within a pattern tag 
 in my svg defs.
 

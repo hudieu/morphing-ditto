@@ -1,4 +1,4 @@
-# Morphing-Ditto.
+# morphing-ditto.
 
 LIVE DEMOS:
 
